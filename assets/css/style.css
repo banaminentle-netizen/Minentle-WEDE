@@ -142,3 +142,8 @@ input[type="reset"]:hover {
         height: 250px !important;
     }
 }
+
+nav a:hover {
+    color: #ff9900 !important;
+    text-decoration: underline !important;
+}
