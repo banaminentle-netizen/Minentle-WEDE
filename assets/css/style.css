@@ -1,0 +1,144 @@
+/* --- BASE STYLES & CSS RESET --- */
+:root {
+    --primary-color: #ff4757;
+    --dark-bg: #2f3542;
+    --light-bg: #f1f2f6;
+    --text-color: #333333;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* --- LAYOUT STRUCTURE & NAVIGATION --- */
+header {
+    background-color: var(--dark-bg);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+/* --- PSEUDO-CLASSES --- */
+nav a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: #ff6b81;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1, h3 {
+    color: var(--dark-bg);
+    margin-bottom: 1rem;
+}
+
+/* --- TABLES & FORMS --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+th, td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: var(--dark-bg);
+    color: var(--white);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #ff6b81;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES & BREAKPOINTS --- */
+@media screen and (max-width: 768px) {
+    main {
+        max-width: 95%;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    iframe {
+        width: 100% !important;
+        height: 250px !important;
+    }
+}
