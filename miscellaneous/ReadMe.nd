@@ -1,0 +1,20 @@
+# JuicyBites Web Development Project (WEDE5020)
+
+## Project Overview
+JuicyBites is a fully responsive web application built for a fast-food business in Gqeberha. It features an interactive menu, search functionality, image lightboxes, contact and enquiry forms with JavaScript validation, and location mapping.
+
+## Features Implemented (Part 3)
+* **Interactive Elements & Maps**: Embedded Google Map for store location access.
+* **Gallery Lightbox**: Interactive image modal viewer for menu items.
+* **Dynamic Content & Search Feature**: Live search box filtering food items instantaneously.
+* **SEO Optimization**: Integrated title tags, meta descriptions, meta keywords, and alt text on images.
+* **Form Validation & Feedback**: Comprehensive client-side checks for user inputs with clear success/error feedback messages.
+
+## Changelog & Record of Development
+* **Part 1 & 2**: Initial wireframes, HTML structural layout, asset organization, and basic CSS styling.
+* **Part 3 (Current)**: 
+  * Added JavaScript search functionality to the menu page.
+  * Implemented the image gallery lightbox modal.
+  * Integrated Google Maps iframe on the contact page.
+  * Added complete JavaScript form validation and dynamic feedback messages for both contact and enquiry forms.
+  * Enhanced SEO meta tags and descriptive image file naming with alt attributes.
